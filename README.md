@@ -14,7 +14,7 @@ The Stripe Payment Backend is built using the following technologies:
 
 ## Live Link
 
-[Stripe Payment Backend API](https://trade-analysis-backend.vercel.app/api/v1)
+[Stripe Payment Backend API](https://trade-analysis-backend.vercel.app)
 
 ## Authentication Routes
 
