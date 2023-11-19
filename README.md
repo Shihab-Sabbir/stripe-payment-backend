@@ -32,60 +32,21 @@ The Stripe Payment Backend is built using the following technologies:
 - **Description**: User registration route.
 - **Request Body**:
   - `email` (string): User's email address.
+  - `name` (string): User's name.
   - `password` (string): User's password.
 - **Response**:
   - `message` (string): Registration success message.
 
-### `/auth/verify-email` (POST)
 
-- **Description**: Verify user email route.
-- **Request Body**:
-  - `token` (string): Token received during registration.
-- **Response**:
-  - `message` (string): Email verification success message.
+## Payment Routes
 
-### `/auth/refresh-token` (POST)
+### `/create-payment-intent` (POST)
 
-- **Description**: Refresh user JWT token route.
+- **Description**: To get the secret key for payment confirmation by sending amount to pay.
 - **Request Headers**:
   - `Authorization` (string): Bearer token.
 - **Response**:
-  - `token` (string): Refreshed JWT token.
+  - Client secret.
 
-### `/auth/logout` (POST)
 
-- **Description**: User logout route.
-- **Request Headers**:
-  - `Authorization` (string): Bearer token.
-- **Response**:
-  - `message` (string): Logout success message.
-
-## Data Routes
-
-### `/data` (GET)
-
-- **Description**: Get trade data route.
-- **Request Headers**:
-  - `Authorization` (string): Bearer token.
-- **Response**:
-  - Array of trade data.
-
-### `/data` (POST)
-
-- **Description**: Add new trade data route.
-- **Request Headers**:
-  - `Authorization` (string): Bearer token.
-- **Request Body**:
-  - `symbol` (string): Trade symbol.
-  - `quantity` (number): Trade quantity.
-  - `price` (number): Trade price.
-- **Response**:
-  - `message` (string): Trade data added successfully message.
-
-# Trade-Analysis-Backend
-# Trade-Analysis-Backend
-# Trade-Analysis-Backend
-# Trade-Analysis-Backend
-# Trade-Analysis-Backend
-# stripe-payment-backend
-# stripe-payment-backend
+# Stripe-Payment-Backend
